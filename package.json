@@ -1,0 +1,16 @@
+{
+  "name": "learningobj",
+  "version": "1.0.0",
+  "description": "set learning objectives w/ sub-goals",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "decoccoisabella@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10"
+  }
+}
