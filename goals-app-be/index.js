@@ -1,8 +1,10 @@
 (async () => {
     const express = require("express");
     const mongo = require("mongodb");
+    const cors = require('cors')
 
     const app = express();
+    app.use(cors());
     const MongoClient = mongo.MongoClient;
     const url = "mongodb://localhost:27017/";
     const client = await MongoClient.connect(url, { useNewUrlParser: true });
@@ -57,5 +59,5 @@
         else res.send(deleted);
     });
 
-    app.listen(3000, console.log("Listening on Port 3000"));
+    app.listen(8000, console.log("Listening on Port 8000"));
 })();
